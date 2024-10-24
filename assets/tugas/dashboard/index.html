@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Blog Admin Dashboard</h1>
+        </header>
+
+        <!-- Statistik Section -->
+        <section class="stats">
+            <div class="stat-card">
+                <h3>Postingan Bulan Ini</h3>
+                <p id="total-posts">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Komentar Bulan Ini</h3>
+                <p id="total-comments">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Pengunjung Bulan Ini</h3>
+                <p id="total-visitors">0</p>
+            </div>
+        </section>
+
+        <!-- Grafik Statistik Bulanan -->
+        <section class="chart-section">
+            <h2>Statistik Selama 12 Bulan</h2>
+            <canvas id="myChart" width="400" height="200"></canvas>
+        </section>
+
+        <!-- Form Menambahkan Postingan Baru -->
+        <section class="form-section">
+            <h2>Tambah Postingan Baru</h2>
+            <form id="post-form">
+                <label for="title">Judul Postingan:</label>
+                <input type="text" id="title" required>
+
+                <label for="content">Konten Postingan:</label>
+                <textarea id="content" required></textarea>
+
+                <button type="submit">Tambah Postingan</button>
+            </form>
+        </section>
+
+        <!-- Form Mengedit Postingan -->
+        <section class="form-section">
+            <h2>Edit Postingan</h2>
+            <form id="post-form">
+                <label for="title">Judul Postingan:</label>
+                <input type="text" id="title" required>
+
+                <label for="content">Konten Postingan:</label>
+                <textarea id="content" required></textarea>
+
+                <button type="submit">Edit Postingan</button>
+            </form>
+        </section>
+
+        <!-- List Postingan -->
+        <section class="post-list">
+            <h2>Daftar Postingan</h2>
+            <ul id="post-list">
+                <li>Belum ada postingan.</li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

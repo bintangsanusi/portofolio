@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bintang</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+		}
+		body {
+			margin: 0;
+			padding: 0;
+			background: blue;
+		}
+		form {
+			width: 300px;
+			background: white;
+			padding: 20px 25px;
+			border-radius: 5px;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			display: flex;
+			flex-direction: column;
+		}
+		h1 {
+			padding: 20px 0px;
+			border-bottom: 2px solid lightgrey;
+			margin: 15px 0px;
+			text-align: center;
+		}
+		input {
+			padding: 10px;
+			font-size: 1em;
+			margin: 10px 0px;
+			outline: none;
+			border: 2px solid blue;
+			border-radius: 25px;
+		}
+		button {
+			margin: 15px 0px;
+			padding: 10px;
+			background: blue;
+			color: white;
+			border-radius: 25px;
+			border: none;
+			font-size: 1em;
+		}
+		.lupa {
+			display: block;
+			text-decoration: none;
+			background: blue;
+			color: white;
+			font-size: 1em;
+			padding: 10px;
+			border-radius: 25px;
+			margin: 15px 0px;
+			text-align: center;
+		}
+		a {
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<h1>login page</h1>
+		<input type="text" name="username" placeholder="masukan username" required>
+		<input type="password" name="password" placeholder="masukan password" required>
+		<a href="#lupa">Lupa Password?</a>
+		<button name="login">Login</button>
+		<center>Or</center>
+		<a href="#daftar" class="lupa">Sign Up</a>
+	</form>
+</body>
+</html>
